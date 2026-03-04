@@ -33,7 +33,7 @@ st.markdown("""
     }
     #MainMenu, footer, header { visibility: hidden; }
     </style>
-    """, unsafe_allow_status=True)
+    """, unsafe_allow_html=True)
 
 # --- Данные о товарах ---
 PRODUCTS = [
