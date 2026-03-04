@@ -55,7 +55,7 @@ for i, p in enumerate(PRODUCTS):
             <div style='font-size:50px'>{p['icon']}</div>
             <h3>{p['name']}</h3>
             <h4 style='color:#007aff'>{p['price']:,} ₽</h4>
-        </div>""", unsafe_allow_status=True)
+        </div>""", unsafe_allow_html=True)
         if st.button(f"В корзину", key=f"p_{p['id']}"):
             st.session_state.cart[p['id']] = st.session_state.cart.get(p['id'], 0) + 1
             st.toast(f"Добавлено: {p['name']}")
